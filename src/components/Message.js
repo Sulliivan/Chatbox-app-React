@@ -9,8 +9,8 @@ const  Message = ({ pseudo, message, isUser }) => {
         )
     } else {
         return (
-            <p className="user-message">
-                {message}
+            <p className="not-user-message">
+               <strong> {pseudo}: </strong> {message}
             </p>
         )
     }
